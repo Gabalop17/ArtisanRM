@@ -1,0 +1,77 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    background: white ;
+}
+
+.main-container {
+    width: 100%;
+    max-width: 1512px;
+    height: 982px;
+    position: relative;
+    background: grey;
+    margin: 15px;
+    border-width: 5px;
+}
+
+/* Barra superior */
+.header-bar {
+    width: 90%;
+    max-width: 1368px;
+    height: 168px;
+    margin: 22px auto;
+    background: #D9D9D9;
+    border-radius: 30px;
+}
+
+/* Barra de búsqueda */
+.search-bar {
+    width: 70%;
+    max-width: 1076px;
+    height: 78px;
+    margin: 45px auto 0;
+    background: #7D7D7D;
+    border-radius: 30px;
+}
+
+/* Título */
+.title {
+    width: 182px;
+    margin: 25px auto 0;
+    text-align: center;
+    color: black;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+/* Contenedor de búsqueda */
+.search-container {
+    width: 70%;
+    max-width: 465px;
+    margin: 20px auto;
+    color: white;
+}
+
+.search-text {
+    font-size: 24px;
+    color: white;
+}
+
+.container-text {
+    background-color: darkgray;
+    font-size: 18px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Área de contenido */
+.content-area {
+    width: 95%;
+    max-width: 1478px;
+    height: 702px;
+    margin: 40px auto 0;
+    background: #7D7D7D;
+    border-radius: 20px;
+}

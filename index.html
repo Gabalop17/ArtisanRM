@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArtisanRM - Artesanías del Caribe</title>
+    
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10.0.1/swiper-bundle.min.css" />
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+
+    <!-- Estilo Personalizado -->
+    <link href="css/index.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">ArtisanRM</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="inicio_sesion.html">Iniciar Sesión</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="perfil de usuarios.html">Perfil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="carrito.html">
+                            <i class="fas fa-shopping-cart"></i>
+                        </a>
+                    </li>
+                </ul>
+                <form class="d-flex ms-lg-3">
+                    <input class="form-control me-2" type="search" placeholder="Buscar">
+                    <button class="btn btn-outline-light" type="submit">Buscar</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="text-white text-center py-5" style="background: linear-gradient(to right, rgba(164, 124, 70, 0.8), rgba(119, 106, 73, 0.8)), url('https://acironline.mx/wp-content/uploads/2020/06/Depositphotos_170805012_l-2015-1920x1281.jpg') center/cover;">
+        <h1 class="display-4 fw-bold">Bienvenido a ArtisanRM</h1>
+        <p class="lead">Descubre la mejor artesanía hecha a mano del Caribe</p>
+        <a href="#productos" class="btn btn-light btn-lg mt-3">Explorar Productos</a>
+    </header>
+
+    <!-- Categorías Populares -->
+    <section class="container my-5" style="text-align: center;  ">
+        <h2 class="text-center mb-4">Categorías Populares</h2>
+        <div class="row text-center">
+            <div class="col-md-3 mb-4">
+                <div class="card p-3 border-0 shadow">
+                    <i class="fas fa-paint-brush fa-3x text-transparent mb-3"></i>
+                    <h5 class="card-title">Pinturas</h5>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="card p-3 border-0 shadow">
+                    <i class="fas fa-gem fa-3x text-transparent mb-3"></i>
+                    <h5 class="card-title">Joyas</h5>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="card p-3 border-0 shadow">
+                    <i class="fas fa-chair fa-3x text-transparent mb-3"></i>
+                    <h5 class="card-title">Decoración</h5>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Productos Destacados -->
+    <section id="productos" class="mt-5">
+        <h2 class="text-center mb-4">Productos Destacados</h2>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <!-- Producto -->
+                <div class="swiper-slide">
+                    <div class="card shadow-sm">
+                        <img class="card-img-top" src="https://via.placeholder.com/300x200" alt="Producto">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Producto 1</h5>
+                            <p class="card-text">Descripción breve del producto.</p>
+                            <a href="#" class="btn btn-primary">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card shadow-sm">
+                        <img class="card-img-top" src="https://via.placeholder.com/300x200" alt="Producto">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Producto 2</h5>
+                            <p class="card-text">Descripción breve del producto.</p>
+                            <a href="#" class="btn btn-primary">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card shadow-sm">
+                        <img class="card-img-top" src="https://via.placeholder.com/300x200" alt="Producto">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Producto 1</h5>
+                            <p class="card-text">Descripción breve del producto.</p>
+                            <a href="#" class="btn btn-primary">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card shadow-sm">
+                        <img class="card-img-top" src="https://via.placeholder.com/300x200" alt="Producto">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Producto 1</h5>
+                            <p class="card-text">Descripción breve del producto.</p>
+                            <a href="#" class="btn btn-primary">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card shadow-sm">
+                        <img class="card-img-top" src="https://via.placeholder.com/300x200" alt="Producto">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Producto 1</h5>
+                            <p class="card-text">Descripción breve del producto.</p>
+                            <a href="#" class="btn btn-primary">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card shadow-sm">
+                        <img class="card-img-top" src="https://via.placeholder.com/300x200" alt="Producto">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Producto 1</h5>
+                            <p class="card-text">Descripción breve del producto.</p>
+                            <a href="#" class="btn btn-primary">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card shadow-sm">
+                        <img class="card-img-top" src="https://via.placeholder.com/300x200" alt="Producto">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Producto 1</h5>
+                            <p class="card-text">Descripción breve del producto.</p>
+                            <a href="#" class="btn btn-primary">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card shadow-sm">
+                        <img class="card-img-top" src="https://via.placeholder.com/300x200" alt="Producto">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Producto 1</h5>
+                            <p class="card-text">Descripción breve del producto.</p>
+                            <a href="#" class="btn btn-primary">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card shadow-sm">
+                        <img class="card-img-top" src="https://via.placeholder.com/300x200" alt="Producto">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Producto 1</h5>
+                            <p class="card-text">Descripción breve del producto.</p>
+                            <a href="#" class="btn btn-primary">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Más productos -->
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </section>
+
+    <section id="season-deals">
+        <div>
+            <div class="icon ">
+
+            </div>
+            <h2 class="text-center mb-4">Season Deals</h2>
+            <div class="card-slide">
+                <div class="card shadow-sm">
+                    <img class="card-img-top" src="" alt="producto en oferta">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Producto en oferta</h5>
+                        <p class="card-text">Descripción breve del producto.</p>
+                        <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4">
+        <div class="container">
+            <p>&copy; 2024 ArtisanRM. Todos los derechos reservados.</p>
+            <p>
+                <a href="#" class="text-white me-2"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="text-white me-2"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
+            </p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10.0.1/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper-container', {
+            loop: true,
+            slidesPerView: 3,
+            spaceBetween: 20,
+            autoplay: { delay: 3000 },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            breakpoints: {
+                320: { slidesPerView: 1 },
+                768: { slidesPerView: 2 },
+                1024: { slidesPerView: 3 },
+            },
+        });
+    </script>
+</body>
+</html>

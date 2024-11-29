@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carrito de Compras</title>
+  <link rel="stylesheet" href="../ARM/css/carrito.css">
+</head>
+<body>
+
+  <!-- Ventana del carrito -->
+  <div id="cartModal" class="modal" aria-hidden="true" role="dialog" aria-labelledby="cartTitle" aria-describedby="cartDescription">
+    <div class="modal-content">
+      <button class="close" id="closeCart" aria-label="Cerrar carrito">&times;</button>
+      <h2 id="cartTitle" class="modal-title">Tu Carrito de Compras</h2>
+      <p id="cartDescription" class="modal-description">Aquí puedes revisar y gestionar los productos en tu carrito.</p>
+
+      <section id="cartItems">
+        <!-- Productos en el carrito -->
+        <div class="cart-item">
+          <img src="producto1.jpg" alt="Producto 1" class="item-image">
+          <div class="item-details">
+            <p class="item-name">Producto 1</p>
+            <p class="item-price">$10.00</p>
+          </div>
+          <button class="remove-item" aria-label="Eliminar Producto 1">Eliminar</button>
+        </div>
+        <div class="cart-item">
+          <img src="producto2.jpg" alt="Producto 2" class="item-image">
+          <div class="item-details">
+            <p class="item-name">Producto 2</p>
+            <p class="item-price">$15.00</p>
+          </div>
+          <button class="remove-item" aria-label="Eliminar Producto 2">Eliminar</button>
+        </div>
+        <!-- Más productos se agregarían dinámicamente -->
+      </section>
+
+      <div class="total">
+        <p><strong>Total:</strong> <span class="total-amount">$25.00</span></p>
+      </div>
+
+      <div class="cart-actions">
+        <button class="btn checkout" aria-label="Proceder al pago">Proceder al pago</button>
+        <button class="btn continue-shopping" aria-label="Seguir comprando">Seguir comprando</button>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2024 Artesanías Online. Todos los derechos reservados.</p>
+  </footer>
+
+  <script>document.addEventListener("DOMContentLoaded", () => {
+    const cartModal = document.getElementById("cartModal");
+    const closeCartButton = document.getElementById("closeCart");
+  
+    // Evento para cerrar el carrito
+    closeCartButton.addEventListener("click", () => {
+      // Cerrar el modal
+      cartModal.style.display = "none";
+  
+      // Redirigir a index.html
+      window.location.href = "index.html";
+    });
+  
+    // Opcional: Mostrar el carrito al abrir
+    const openCartButton = document.getElementById("openCart");
+    openCartButton.addEventListener("click", () => {
+      cartModal.style.display = "block";
+    });
+  });
+  </script>
+  <script src="../ARM/js/carrito.js"></script>
+</body>
+</html>

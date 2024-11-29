@@ -1,0 +1,186 @@
+/* Estilos globales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.registration-container {
+  display: flex;
+  width: calc(100vw - 40px); /* Resta 40px del ancho total para margen */
+  height: calc(100vh - 40px); /* Resta 40px de la altura total para margen */
+  margin: 20px; /* Crea un margen uniforme de 20px alrededor del contenedor */
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+
+/* Columna izquierda */
+.left-column {
+  position: relative;
+  flex: 1;
+  background: url('https://th.bing.com/th/id/R.5ec0569aff2f86d9925216f7134435b6?rik=vCD2sNkR0LlHkw&pid=ImgRaw&r=0') no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-end-end-radius: 50px;
+}
+
+.overlay {
+  position: absolute;
+  background: transparent;
+  color: white;
+  padding: 50px 20px;
+  text-align: center;
+  border-radius: 10px;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.social-login-text {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+.social-icon {
+  width: 40px;
+  height: 40px;
+}
+
+/* Columna derecha */
+.right-column {
+  flex: 1;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: white;
+}
+
+.back-arrow {
+  width: 50px;
+}
+.back-arrow:hover{
+  width: 35px;
+}
+.logo-container {
+  position: absolute; /* Posiciona el logo de forma absoluta */
+  top: 10px; /* Separación desde la parte superior */
+  right: 10px; /* Separación desde la parte derecha */
+  z-index: 10; /* Asegura que esté por encima de otros elementos */
+}
+
+.logo {
+  width: 100px; /* Ajusta el tamaño del logo */
+  height: auto;
+  cursor: pointer;
+}
+
+.registration-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-title {
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: #333;
+  
+}
+
+.form-label {
+  font-size: 16px;
+}
+
+.form-input {
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background: #9F6A43;
+  color: white;
+}
+
+.submit-button {
+  padding: 12px;
+  font-size: 16px;
+  color: white;
+  background: #4D3007;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+  background-color: #56534d;
+  box-shadow: 5px;
+}
+
+.links {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.links a {
+  color: #63b1b7;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.links a:hover {
+  text-decoration: underline;
+}
+label{
+  background: #F2C79633;
+  box-shadow: 0px 4px 4px 0px #00000040;
+
+}
+
+/* Media queries para pantallas más pequeñas */
+@media (max-width: 768px) {
+  .registration-container {
+    flex-direction: column;
+  }
+
+  .left-column {
+    height: 200px;
+  }
+
+  .overlay {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .right-column {
+    padding: 20px;
+  }
+}
+
+::placeholder{
+  color: white;
+}

@@ -1,0 +1,49 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.header {
+    background-color: #ffa500;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.5em;
+    color: #fff;
+}
+.product {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.product div {
+    width: 45%;
+    padding: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+.product img {
+    width: 100%;
+    height: auto;
+}
+.product-description {
+    padding: 10px;
+    margin-top: 10px;
+}
+.product-description p {
+    margin: 0;
+}
+.armadillo {
+    background-color: #4b4b4b;
+    color: #fff;
+}
+.calavera {
+    background-color: #ffa500;
+    color: #fff;
+}

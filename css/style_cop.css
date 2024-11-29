@@ -1,0 +1,97 @@
+body {
+    font-family: Proxima Nova, -apple-system, Roboto, Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar_principal {
+    background-color: #D9D9D9;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+  }
+  
+  .navbar-brand {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .navbar_search {
+    display: flex;
+  }
+  
+  .form-inline {
+    display: flex;
+  }
+  
+  .form-control {
+    padding: 5px;
+    margin-right: 5px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+  
+  .button_search {
+    padding: 6px 10px;
+    border: none;
+    background-color: #333;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .cont_prod {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: flex-start;
+    padding: 20px;
+  }
+  
+  .card {
+    width: 18rem;
+    background-color: #ffffff;
+    border-radius: 6px;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.12);
+    overflow: hidden;
+    text-align: center;
+  }
+  
+  .card-img-top {
+    width: 100%;
+    height: auto;
+  }
+  
+  .card-body {
+    padding: 15px;
+  }
+  
+  .card-title {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+  }
+  
+  .card-text {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 15px;
+  }
+  
+  .btn-compra{
+    background-color: #4CAF50;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .btn-compra:hover{
+    background-color: antiquewhite;
+    color: #4CAF50;
+  }
+  
